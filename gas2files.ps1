@@ -31,7 +31,7 @@ Foreach ($f in $j.files) {
 
   $name = $f.name 
   if ($f.type -eq "server_js") {
-    $name += ".js"
+    $name += ".gs"
   } 
   elseif ($f.type -eq "html") { 
     $name += ".html"
