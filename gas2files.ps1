@@ -41,7 +41,7 @@ Foreach ($f in $j.files) {
   if ($destDir.Length -gt 0) {$name = "$destDir\$name"}
 
   Write-Output "Saving: $name"
-  $f.source | Out-File $name
+  $f.source | Out-File $name -Encoding utf8
 
 
 }
