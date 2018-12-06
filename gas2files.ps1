@@ -36,7 +36,7 @@ Foreach ($f in $j.files) {
   elseif ($f.type -eq "html") { 
     $name += ".html"
   } 
-  else {name += ".unknown"}
+  else {$name += ".txt"}
 
   if ($destDir.Length -gt 0) {$name = "$destDir\$name"}
 
